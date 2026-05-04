@@ -200,26 +200,26 @@ function openModal(id) {
     <div class="mb-6">
       <div class="text-4xl mb-4">${p.emoji}</div>
       <p class="text-xs uppercase tracking-widest mb-2 font-body" style="color:${p.color}">${p.category} · ${p.year}</p>
-      <h3 class="font-display text-2xl font-800 dark:text-silver text-ink mb-4" style="font-weight:800;">${p.title}</h3>
-      <p class="dark:text-muted text-gray-500 text-sm leading-relaxed">${p.description}</p>
+      <h3 class="font-display text-2xl font-800 dark:text-silver text-graphite mb-4" style="font-weight:800;">${p.title}</h3>
+      <p class="dark:text-muted text-graphite-muted text-sm leading-relaxed">${p.description}</p>
     </div>
 
     <div class="grid sm:grid-cols-2 gap-5 mb-6">
       <div class="glass rounded-2xl p-5">
-        <p class="text-xs uppercase tracking-widest dark:text-muted text-gray-400 mb-3">El desafío</p>
-        <p class="text-sm dark:text-silver text-ink leading-relaxed">${p.challenge}</p>
+        <p class="text-xs uppercase tracking-widest dark:text-muted text-graphite-muted mb-3">El desafío</p>
+        <p class="text-sm dark:text-silver text-graphite leading-relaxed">${p.challenge}</p>
       </div>
       <div class="glass rounded-2xl p-5">
-        <p class="text-xs uppercase tracking-widest dark:text-muted text-gray-400 mb-3">La solución</p>
-        <p class="text-sm dark:text-silver text-ink leading-relaxed">${p.solution}</p>
+        <p class="text-xs uppercase tracking-widest dark:text-muted text-graphite-muted mb-3">La solución</p>
+        <p class="text-sm dark:text-silver text-graphite leading-relaxed">${p.solution}</p>
       </div>
     </div>
 
     <div class="glass rounded-2xl p-5 mb-6">
-      <p class="text-xs uppercase tracking-widest dark:text-muted text-gray-400 mb-4">Resultados</p>
+      <p class="text-xs uppercase tracking-widest dark:text-muted text-graphite-muted mb-4">Resultados</p>
       <ul class="space-y-2">
         ${p.results.map(r => `
-          <li class="flex items-start gap-3 text-sm dark:text-silver text-ink">
+          <li class="flex items-start gap-3 text-sm dark:text-silver text-graphite">
             <span class="mt-0.5 text-xs font-bold" style="color:${p.color}">↑</span>
             ${r}
           </li>
@@ -228,9 +228,9 @@ function openModal(id) {
     </div>
 
     <div>
-      <p class="text-xs uppercase tracking-widest dark:text-muted text-gray-400 mb-3">Herramientas</p>
+      <p class="text-xs uppercase tracking-widest dark:text-muted text-graphite-muted mb-3">Herramientas</p>
       <div class="flex flex-wrap gap-2">
-        ${p.tools.map(t => `<span class="px-3 py-1.5 rounded-full text-xs glass dark:text-silver text-ink">${t}</span>`).join('')}
+        ${p.tools.map(t => `<span class="px-3 py-1.5 rounded-full text-xs glass dark:text-silver text-graphite">${t}</span>`).join('')}
       </div>
     </div>
   `;
@@ -277,10 +277,10 @@ filterTabs.forEach(tab => {
     // Update active tab style
     filterTabs.forEach(t => {
       t.classList.remove('active');
-      t.classList.add('dark:text-muted', 'text-gray-500');
+      t.classList.add('dark:text-muted', 'text-graphite-muted');
     });
     tab.classList.add('active');
-    tab.classList.remove('dark:text-muted', 'text-gray-500');
+    tab.classList.remove('dark:text-muted', 'text-graphite-muted');
 
     const filter = tab.dataset.filter;
 
