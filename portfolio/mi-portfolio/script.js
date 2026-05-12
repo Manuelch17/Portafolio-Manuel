@@ -1,7 +1,7 @@
 /**
  * ══════════════════════════════════════════════
  *  PORTFOLIO — script.js
- *  Alex Rivera · Designer & Developer
+ *  Manuel Chicangana · Frontend Developer & Creative Designer
  * ══════════════════════════════════════════════
  */
 
@@ -112,76 +112,76 @@ document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 /* ─── Project data ───────────────────────────── */
 const projects = {
   1: {
-    title: 'NovaDash — SaaS Dashboard',
-    category: 'Apps · UX/UI Design',
-    year: '2024',
-    description: 'Rediseño completo de la plataforma analytics de NovaTech. El proyecto partió de una auditoría UX profunda que reveló puntos de fricción críticos en el flujo de navegación.',
-    challenge: 'Los usuarios tardaban más de 8 clicks en acceder a los datos más relevantes. La plataforma tenía una tasa de abandono del 42% en el primer mes.',
-    solution: 'Desarrollé un design system desde cero con más de 60 componentes reutilizables. Reduje la arquitectura de información a 3 niveles de navegación y creé un dashboard personalizable.',
-    results: ['40% mejora en usabilidad (SUS Score: 84)', '62% reducción en tiempo de onboarding', '28% aumento en retención mensual', 'Design system adoptado por equipo de 12 devs'],
-    tools: ['Figma', 'React', 'Tailwind CSS', 'Storybook'],
+    title: 'EatCloud Dashboard',
+    category: 'React · TypeScript',
+    year: '2026',
+    description: 'Plataforma frontend para gestión y calificación de donaciones, diseñada para ofrecer una experiencia clara, moderna y funcional.',
+    challenge: 'El objetivo era organizar procesos de donación en una interfaz limpia, fácil de entender y preparada para integrarse con datos externos.',
+    solution: 'Construí una experiencia frontend con React, TypeScript y lógica de integración API, cuidando la jerarquía visual y la usabilidad del dashboard.',
+    results: ['Interfaz moderna para gestión de donaciones', 'Componentes reutilizables y escalables', 'Flujo preparado para API Integration', 'Experiencia responsive enfocada en claridad'],
+    tools: ['React', 'TypeScript', 'API Integration'],
     color: '#C8FF00',
     emoji: '📊'
   },
   2: {
-    title: 'Luxe Store — E-commerce Premium',
-    category: 'Web · Frontend Development',
-    year: '2024',
-    description: 'Tienda online de lujo para marca de moda con checkout optimizado y experiencia de compra premium que refleja los valores de la marca.',
-    challenge: 'La tienda anterior tenía un checkout de 7 pasos con una tasa de abandono del 78%. El diseño no reflejaba el posicionamiento premium de la marca.',
-    solution: 'Rediseñé el checkout a 3 pasos con progreso visual claro. Implementé micro-animaciones de lujo, visor de producto en 360° y un sistema de recomendaciones personalizadas.',
-    results: ['62% aumento en conversiones', '45% reducción en abandono de carrito', '€2.3M en ventas el primer trimestre', 'NPS de 72 puntos'],
-    tools: ['Figma', 'Next.js', 'Shopify', 'GSAP'],
+    title: 'Portfolio UX/UI',
+    category: 'Portfolio · UI Design',
+    year: '2026',
+    description: 'Diseño y desarrollo de portafolio premium inspirado en productos SaaS modernos, con enfoque visual, responsive y profesional.',
+    challenge: 'Crear una presencia digital clara que conectara perfil técnico, diseño gráfico y contenido audiovisual sin perder coherencia visual.',
+    solution: 'Diseñé una experiencia tipo SaaS con secciones enfocadas en servicios, proyectos, proceso y contacto, manteniendo una estética premium.',
+    results: ['Identidad digital profesional', 'Copy optimizado para perfil híbrido', 'Diseño responsive y moderno', 'Presentación lista para clientes y oportunidades remotas'],
+    tools: ['Figma', 'HTML', 'Tailwind CSS'],
     color: '#A855F7',
-    emoji: '🛍️'
+    emoji: '💼'
   },
   3: {
-    title: 'BrandX — Identidad Visual Completa',
-    category: 'Redes Sociales · Branding',
-    year: '2023',
-    description: 'Creación de identidad visual completa para startup fintech enfocada en el mercado latinoamericano, incluyendo logo, sistema de color, tipografía y kit de redes sociales.',
-    challenge: 'La startup necesitaba posicionarse como tecnológica y confiable en un mercado donde la mayoría de fintechs usaban diseños similares y poco diferenciados.',
-    solution: 'Desarrollé una identidad basada en el concepto de "fluidez digital" con un logo que evoca movimiento y solidez. El sistema incluye más de 120 assets para redes sociales.',
-    results: ['Reconocimiento de marca +180% en 6 meses', 'Engagement en redes +340%', 'Brand recall 3x superior a competidores', 'Premios: Best Fintech Brand LATAM 2023'],
-    tools: ['Illustrator', 'Photoshop', 'Figma', 'After Effects'],
+    title: 'Modern Business Website',
+    category: 'Web · Business',
+    year: '2025',
+    description: 'Desarrollo web corporativo moderno optimizado para experiencia visual, comunicación clara y posicionamiento digital.',
+    challenge: 'Traducir una propuesta de negocio en una web clara, visual y fácil de recorrer desde cualquier dispositivo.',
+    solution: 'Organicé la estructura de contenido, diseñé bloques visuales consistentes y desarrollé una experiencia responsive orientada a conversión.',
+    results: ['Sitio moderno para presencia digital', 'Estructura clara para servicios', 'Diseño adaptable a móvil y escritorio', 'Base preparada para SEO básico'],
+    tools: ['WordPress', 'Diseño Web', 'Responsive Design'],
     color: '#22C55E',
-    emoji: '🎨'
+    emoji: '🌐'
   },
   4: {
-    title: 'PayFlow — Fintech Mobile App',
-    category: 'Apps · Mobile Design',
-    year: '2024',
-    description: 'Aplicación de pagos y transferencias con onboarding optimizado y experiencia de usuario de nivel bancario premium para el segmento millennial y Gen Z.',
-    challenge: 'El churn en los primeros 7 días era del 65%. Los usuarios abandonaban durante el proceso de verificación KYC que tenía 14 pasos y tardaba 12 minutos.',
-    solution: 'Rediseñé el onboarding a 3 fases claras con feedback en tiempo real. Implementé biometría facial como primera pantalla de confianza y gamificación en los primeros usos.',
-    results: ['35% reducción en churn (D7)', '68% mejora en completion rate KYC', '4.8★ en App Store y Google Play', '200K descargas en primeros 3 meses'],
-    tools: ['Figma', 'React Native', 'Lottie', 'Maze (testing)'],
+    title: 'Twitch Streaming Brand',
+    category: 'Branding · Streaming',
+    year: '2025',
+    description: 'Branding visual y contenido gráfico para streaming y creación de contenido digital.',
+    challenge: 'Crear una presencia visual reconocible para canales de streaming, piezas gráficas y contenido en vivo.',
+    solution: 'Desarrollé recursos visuales para identidad, overlays y comunicación digital con un sistema gráfico consistente.',
+    results: ['Identidad visual para streaming', 'Piezas gráficas listas para contenido', 'Sistema visual adaptable', 'Estética alineada a creación digital'],
+    tools: ['Photoshop', 'Illustrator', 'Figma'],
     color: '#0080FF',
-    emoji: '💳'
+    emoji: '🎮'
   },
   5: {
-    title: 'Orion Studio — Brand Film',
+    title: 'Video Content Reels',
     category: 'Video · Motion Graphics',
-    year: '2023',
-    description: 'Video de marca para estudio de arquitectura de lujo, combinando footage real, motion graphics y sound design para comunicar innovación y excelencia.',
-    challenge: 'El estudio necesitaba posicionarse en el mercado internacional de arquitectura premium. Su contenido previo era genérico y no diferenciaba su propuesta de valor.',
-    solution: 'Produje un film de 3:30 minutos con estética cinematográfica. El concepto visual se basó en la dualidad entre lo construido y lo imaginado, usando transiciones que fusionan renders y realidad.',
-    results: ['500K reproducciones orgánicas en 2 semanas', '3 proyectos internacionales captados', 'Viral en comunidades de arquitectura', 'Premio: Best Architecture Film 2023'],
-    tools: ['Premiere Pro', 'After Effects', 'DaVinci Resolve', 'Cinema 4D'],
+    year: '2025',
+    description: 'Edición de reels y contenido audiovisual para redes sociales utilizando motion graphics y edición dinámica.',
+    challenge: 'Transformar ideas y clips base en contenido corto, claro y atractivo para captar atención en redes sociales.',
+    solution: 'Edité piezas verticales con ritmo visual, cortes dinámicos, motion graphics y ajustes de audio para mejorar retención.',
+    results: ['Reels optimizados para redes sociales', 'Edición dinámica y visual', 'Motion graphics aplicados al contenido', 'Formato listo para publicación'],
+    tools: ['Premiere Pro', 'CapCut', 'Motion Graphics'],
     color: '#FF6B6B',
     emoji: '🎬'
   },
   6: {
-    title: 'GreenAI — SaaS Landing Page',
-    category: 'Web · Landing Page',
-    year: '2024',
-    description: 'Landing page de alto impacto para plataforma de IA sostenible, diseñada con foco absoluto en la conversión y claridad del value proposition.',
-    challenge: 'El producto resolvía un problema complejo de IA aplicada a sostenibilidad, pero el equipo no lograba comunicarlo de forma clara. La landing anterior convertía al 1.2%.',
-    solution: 'Restructuré el mensaje con el framework de Jobs-to-be-Done. Diseñé y desarrollé una landing con scroll narrativo, demos interactivas y social proof estratégicamente colocado.',
-    results: ['8.4% tasa de conversión (top 1% industria)', '320% ROI en el primer mes', 'CAC reducido en 55%', '$1.2M ARR en 4 meses post-launch'],
-    tools: ['Figma', 'Next.js', 'Tailwind', 'Framer Motion'],
+    title: 'Nuevo proyecto digital',
+    category: 'Freelance · Disponible',
+    year: '2026',
+    description: 'Actualmente disponible para nuevos proyectos de frontend, diseño web, UI y contenido visual.',
+    challenge: 'Cada proyecto necesita una experiencia digital clara, funcional y alineada a los objetivos de marca.',
+    solution: 'Puedo ayudarte a diseñar, desarrollar y optimizar interfaces modernas, sitios web y contenido audiovisual.',
+    results: ['Frontend Development', 'Diseño UI/UX', 'Diseño Web', 'Edición de Video'],
+    tools: ['React', 'WordPress', 'Figma', 'Premiere Pro'],
     color: '#00FFC2',
-    emoji: '🌿'
+    emoji: '✨'
   }
 };
 
@@ -473,5 +473,5 @@ window.addEventListener('load', () => {
   });
 });
 
-console.log('%c Alex Rivera Portfolio ', 'background:#C8FF00; color:#0A0A0F; font-family:monospace; font-size:14px; font-weight:bold; padding:6px 12px; border-radius:4px;');
+console.log('%c Manuel Chicangana Portfolio ', 'background:#C8FF00; color:#0A0A0F; font-family:monospace; font-size:14px; font-weight:bold; padding:6px 12px; border-radius:4px;');
 console.log('%c Built with ♥ using HTML + Tailwind + Vanilla JS', 'color:#7A7A8C; font-family:monospace;');
